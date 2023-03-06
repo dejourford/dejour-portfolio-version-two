@@ -97,6 +97,7 @@ nav {
     height: 100vh;
     display: flex;
     justify-content: space-around;
+    padding-top: 50px;
     
 }
 
