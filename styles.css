@@ -239,8 +239,18 @@ nav {
     text-transform: uppercase;
     text-decoration: 5px gold overline;
     text-align: center;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
+.project-section-header img {
+    width: 20%;
+    background: gold;
+    border-radius: 49%;
+}
 
 
 .feature-wrapper {
@@ -262,7 +272,7 @@ nav {
 
 .feature-gif {
     width: 100%;
-    filter: grayscale(80%);
+    filter: grayscale(95%);
     transition: 0.3s ease;
     border-radius: 5px;
 
@@ -276,6 +286,7 @@ nav {
     font-family: "Quicksand";
     font-weight: 800;
     font-size: 1.3rem;
+    color: gold;
 }
 
 .feature-info {
@@ -316,6 +327,23 @@ nav {
 .feature-buttons button:hover {
     transform: rotate(-5deg);
 }
+
+#feature-two-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#feature-three-wrapper {
+    display: flex;
+}
+
+
+
+
+
+
+
+
 
 
 /* MEDIA QUERIES */
