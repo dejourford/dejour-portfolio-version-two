@@ -228,7 +228,7 @@ nav {
 .project-section-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 60px;
     padding: 20px;
 }
 
@@ -337,6 +337,10 @@ nav {
     display: flex;
 }
 
+#feature-four-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+}
 
 
 
