@@ -359,10 +359,6 @@ nav {
 
 /* CONTACT SECTION */
 
-#contact {
-    background: black;
-}
-
 .contactHeader {
     color: white;
     font-size: 3rem;
@@ -396,6 +392,7 @@ textarea:focus {
 .nameField, .emailField {
     width: 350px;
     padding: 10px;
+    font-size: 16px;
 }
 
 .messageBox {
@@ -403,6 +400,7 @@ textarea:focus {
     width: 350px;
     text-align: justify;
     padding: 10px;
+    font-size: 16px;
 }
 
 .messageBox::placeholder {
@@ -417,6 +415,7 @@ textarea:focus {
     border: none;
     border-radius: 5px;
     font-weight: 800;
+    color: ;
 }
 
 .submitBtn:hover {
