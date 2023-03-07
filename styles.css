@@ -228,7 +228,7 @@ nav {
 .project-section-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 90px;
     padding: 20px;
 }
 
@@ -252,6 +252,15 @@ nav {
     border-radius: 49%;
 }
 
+#feature-two-wrapper,
+#feature-four-wrapper {
+    border-left: 5px solid gold;
+}
+
+#feature-one-wrapper,
+#feature-three-wrapper {
+    border-right: 5px solid skyblue;
+}
 
 .feature-wrapper {
     padding: 20px;
@@ -302,9 +311,10 @@ nav {
 }
 
 .feature-languages {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     padding: 10px;
-    text-align: center;
+    align-items: center;
     font-weight: 800;
 }
 
@@ -351,6 +361,16 @@ nav {
 
 
 /* MEDIA QUERIES */
+@media screen and (max-width: 1280px) {
+    .feature-gif {
+       
+        filter: grayscale(0%);
+        
+    
+    }
+}
+
+
 @media screen and (max-width: 870px){
    /* navigation */
     .hamburger {
@@ -406,11 +426,11 @@ nav {
     .hero-img img {
         width: 70%;
         display: flex;
-    }
+    } 
 
 }
-
-@media screen and (max-width: 672px){
+ 
+ @media screen and (max-width: 672px){
     .languages {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -419,6 +439,27 @@ nav {
         
     }
 }
+
+@media screen and (max-width: 651px){
+   .feature-wrapper, 
+   #feature-four-wrapper,
+   #feature-two-wrapper {
+    display: flex;
+    align-items: center;
+   }
+
+  .feature-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .feature-buttons {
+    gap: 20px;
+  }
+}
+
+
 
 @media screen and (max-width: 500px){
     .languages {
@@ -430,6 +471,25 @@ nav {
     }
 }
 
+
+@media screen and (max-width: 485px){
+    .feature-wrapper, 
+    #feature-four-wrapper,
+    #feature-two-wrapper {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+    }
+
+    .feature-info {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.2rem;
+        line-height: 1.9rem;
+        max-width: none;
+    }
+}
+
 @media screen and (max-width: 414px){
     .languages {
         display: grid;
@@ -438,4 +498,4 @@ nav {
         justify-content: center;
         
     }
-}
+} 
