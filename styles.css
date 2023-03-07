@@ -163,7 +163,7 @@ nav {
 
 /* ABOUT SECTION */
 .about-section {
-    height: 100%;
+    min-height: 100vh;
     background: white;
     display: flex;
     justify-content: space-between;
@@ -184,6 +184,7 @@ nav {
     text-align: center;
     padding: 10px;
     text-decoration: 5px gold overline;
+    text-transform: uppercase;
 
 }
 
@@ -217,6 +218,105 @@ nav {
 .language-name {
     text-transform: uppercase;
 }
+/* PROJECTS SECTION */
+.project-section {
+    min-height: 100vh;
+    background: white;
+
+}
+
+.project-section-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.project-section-header {
+    font-size: 2rem;
+    font-weight: 800;
+    padding: 20px;
+    text-transform: uppercase;
+    text-decoration: 5px gold overline;
+    text-align: center;
+}
+
+
+
+.feature-wrapper {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+}
+
+.feature-profile {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.feature-gif {
+    width: 100%;
+    filter: grayscale(80%);
+    transition: 0.3s ease;
+    border-radius: 5px;
+
+}
+
+.feature-gif:hover {
+    filter: grayscale(0);
+}
+
+.feature-title {
+    font-family: "Quicksand";
+    font-weight: 800;
+    font-size: 1.3rem;
+}
+
+.feature-info {
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    font-size: 1.2rem;
+    line-height: 1.9rem;
+}
+
+.feature-language-img {
+    width: 10%;
+}
+
+.feature-languages {
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    font-weight: 800;
+}
+
+.feature-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.feature-buttons button {
+    font-size: 1.2rem;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: gold;
+    text-transform: uppercase;
+    font-family: 'Quicksand';
+    cursor: pointer;
+}
+
+.feature-buttons button:hover {
+    transform: rotate(-5deg);
+}
+
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 870px){
