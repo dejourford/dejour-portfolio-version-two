@@ -318,6 +318,11 @@ nav {
     font-weight: 800;
 }
 
+.feature-language-group {
+    display: flex;
+    align-items: center;
+}
+
 .feature-buttons {
     display: flex;
     justify-content: space-around;
