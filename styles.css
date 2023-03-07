@@ -15,6 +15,13 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
 }
 
+/* SPACER FOR SPACE */
+.spacer {
+    height: 250px;
+}
+
+
+
 /* NAVIGATION */
 nav {
     position: fixed;
@@ -33,6 +40,7 @@ nav {
     padding: 10px;
     background: gold;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .navbar img {
@@ -155,12 +163,11 @@ nav {
 
 /* ABOUT SECTION */
 .about-section {
-    height: 100vh;
+    height: 100%;
     background: white;
-    padding: 30px;
     display: flex;
     justify-content: space-between;
-
+    padding: 30px;
 }
 
 .about-section-wrapper {
@@ -271,3 +278,32 @@ nav {
 
 }
 
+@media screen and (max-width: 672px){
+    .languages {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        justify-content: center;
+        
+    }
+}
+
+@media screen and (max-width: 500px){
+    .languages {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        justify-content: center;
+        
+    }
+}
+
+@media screen and (max-width: 414px){
+    .languages {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+        justify-content: center;
+        
+    }
+}
