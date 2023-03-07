@@ -352,11 +352,129 @@ nav {
     flex-direction: row-reverse;
 }
 
+/* CONTACT SECTION */
+
+#contact {
+    background: black;
+}
+
+.contactHeader {
+    color: white;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.formWrapper {
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    transform: translateY(100px);
+    gap: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input:focus {
+    border: 5px solid gold;
+}
+
+textarea:focus {
+    border: 5px solid gold;
+}
+
+.nameField, .emailField {
+    width: 350px;
+    padding: 10px;
+}
+
+.messageBox {
+    height: 200px;
+    width: 350px;
+    text-align: justify;
+    padding: 10px;
+}
+
+.messageBox::placeholder {
+    text-align: top;
+}
+
+.submitBtn {
+    width: 100px;
+    height: 50px;
+    align-self: center;
+    background: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 800;
+}
+
+.submitBtn:hover {
+    background: gold;
+}
+
+.formWrapper {
+    transform: translateY(20px);
+    text-transform: uppercase;
+}
+
+.contact-section {
+    height: 100vh;
+    padding: 50px 10px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.contact-section-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-header-text {
+    font-size: 3rem;
+    text-decoration: 5px solid gold overline;
+}
+
+.contact-section-header img {
+    width: 20%;
+    background-color: gold;
+    border-radius: 49%;
+}
+
+/* SOCIALS */
+.socials {
+    transform: translateY(30px);
+}
+
+.socialLinks {
+    display: flex;
+    justify-content: space-around;
+}
+
+svg {
+    font-size: 50px;
+    color: white;
+}
+
+svg:hover {
+    color: gold;
+}
 
 
+/* footer */
+footer {
+    text-align: center;
+    padding: 20px;
 
-
-
+}
 
 
 
@@ -429,6 +547,18 @@ nav {
     } 
 
 }
+@media screen and (max-width: 754px) {
+    .formWrapper {
+       display: flex;
+       flex-direction: column;   
+       justify-content: center;
+       align-items: center; 
+    }
+}
+
+
+
+
  
  @media screen and (max-width: 672px){
     .languages {
