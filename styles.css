@@ -288,7 +288,7 @@ nav {
 }
 
 .screenshot {
-    width: 70%;
+    max-width: 85%;
     filter: grayscale(95%);
     transition: 0.3s ease;
     border-radius: 5px;
@@ -496,6 +496,10 @@ footer {
         filter: grayscale(0%);
         
     
+    }
+
+    .screenshot {
+        filter: grayscale(0%);
     }
 }
 
