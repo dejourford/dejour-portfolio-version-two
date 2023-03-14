@@ -287,7 +287,14 @@ nav {
 
 }
 
-.feature-gif:hover {
+.screenshot {
+    width: 70%;
+    filter: grayscale(95%);
+    transition: 0.3s ease;
+    border-radius: 5px;
+}
+
+.feature-gif:hover, .screenshot:hover {
     filter: grayscale(0);
 }
 
